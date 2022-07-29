@@ -1,0 +1,165 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-image: url(./images/bg-desktop.svg);
+ background-color: hsl(257, 40%, 49%);
+ width: 100vw;
+ height: 100vh;
+ color: white;
+ font-size: 18px;
+ line-height: 40px;
+ font-family: 'Open Sans', sans-serif;
+ padding: 20px 30px 20px 50px ;
+ font-weight: 400;
+ background-repeat: no-repeat;
+}
+.logo > img{
+ width: 200px;
+ padding-bottom: 40px;
+ padding-top: 10px;
+}
+#column{
+ margin-top: 0px;
+ display: flex;
+ align-items: center;
+}
+.column{
+ flex: 50%;
+}
+
+h1{
+ font-size: 40px;
+ margin-bottom: 25px;
+ margin-top: -20px;
+ font-family: "Poppins",sans-serif;
+ font-weight: 600;
+ line-height: 40px;
+}
+.text{
+ margin-right:15px;
+ text-align: center;
+}
+.register-btn{
+ width: 150px;
+ padding: 15px 40px;
+ border-radius: 30px;
+ border: none;
+ box-shadow: 5px 5px 10px black;
+}
+.register-btn:hover{
+ background-color: hsl(300, 69%, 71%);
+ color: white;
+ cursor: pointer;
+}
+.register{
+ margin-top: 15px;
+}
+.fa{
+ color: white;
+ font-size: 20px;
+ width: 40px;
+ height: 40px;
+ background-color: transparent;
+ border: 1px solid white;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ align-items: center;
+ margin: 0 10px;
+}
+.icons{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+}
+.last-text{
+ margin:0 30px;
+ text-align: center;
+}
+.last-text a{
+ color:  hsl(300, 69%, 71%);
+ text-decoration: underline;
+}
+.fa:hover{
+ color: hsl(300, 69%, 71%);
+ border: 1px solid hsl(300, 69%, 71%);
+}
+a{
+ text-decoration: none;
+}
+
+@media only screen and (max-width : 400px) {
+ body{
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  padding: 10px 15px 15px 25px ;
+  font-size: 14px;
+  text-align: center;
+ }
+ #column{
+  flex-direction: column;
+  justify-content: center;
+ }
+ .column > img{
+  width: 300px;
+  padding-bottom: 50px;
+ }
+ .logo > img{
+  width: 100px;
+ }
+ h1{
+  font-size: 25px;
+  text-align: center;
+ }
+ .register-btn{
+  width: 200px;
+ }
+ .register{
+  margin-bottom: 30px;
+ }
+ .icons{
+  justify-content: center;
+  margin-bottom: 40px;
+ }
+ .logo{
+  text-align: left;
+  padding-left: 15px;
+ }
+}
+
+@media only screen and (max-width : 900px) {
+ #column{
+  flex-direction: column;
+  justify-content: center;
+ }
+ h1{
+  text-align: center;
+  padding-top: 50px;
+ }
+ .icons{
+  justify-content: center;
+  margin: 40px;
+ }
+ .register{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+ }
+ .last-text{
+  margin-bottom: 30px;
+ }
+}
+
+@media only screen and (max-width : 750px){
+ .column > img{
+  width: 70%;
+  padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
